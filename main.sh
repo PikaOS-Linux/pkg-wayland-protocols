@@ -1,11 +1,13 @@
 #! /bin/bash
 
 DEBIAN_FRONTEND=noninteractive
+apt-get update
 
 # Clone Upstream
-mkdir -p ./src-pkg-name
-cp -rvf ./debian ./src-pkg-name/
-cd ./src-pkg-name/
+git clone https://gitlab.freedesktop.org/wayland/wayland-protocols.git
+cd wayland-protocols
+git checkout 1.32
+cp -rvf ../debian ./
 
 # Get build deps
 apt-get build-dep ./ -y
