@@ -1,3 +1,9 @@
+wayland-protocols (1.32-100pika1) pikauwu; urgency=medium
+
+  * New upstream release.
+
+ -- ferrreo <harderthanfire@gmail.com>  Fri, 13 Jan 2023 16:04:57 +0200
+
 wayland-protocols (1.32-99pika1) unstable; urgency=medium
 
   * New upstream release.
