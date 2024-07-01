@@ -4,9 +4,8 @@ DEBIAN_FRONTEND=noninteractive
 apt-get update
 
 # Clone Upstream
-git clone https://gitlab.freedesktop.org/wayland/wayland-protocols.git
+git clone https://gitlab.freedesktop.org/wayland/wayland-protocols.git -b 1.36
 cd wayland-protocols
-git checkout 1.34
 cp -rvf ../debian ./
 
 # Get build deps
